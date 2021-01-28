@@ -1,25 +1,24 @@
 #!/bin/sh
-/*The script will add new array with geographical coordinates based on location.
-New coordinates need to be put manualy from the website http://geojson.io.
-
-The script require a connection string as a parameter to access the database
-connection - connection string to log into database*/
-
-/* Current locations in the database:
-    "eisenach",
-  	"greiz",
-  	"heiligenstadt",
-  	"hildburghausen",
-  	"jena",
-  	"meiningen",
-  	"mühlhausen",
-  	"neustadt",
-  	"sondershausen",
-  	"stadtroda",
-  	"suhl",
-  	"wartburgkreis",
-  	"weimar"
-*/
+#The script will add new array with geographical coordinates based on location.
+#New coordinates need to be put manualy from the website http://geojson.io.
+#
+#The script require a connection string as a parameter to access the database
+#connection - connection string to log into database*/
+#
+# Current locations in the database:
+#    "eisenach",
+#  	"greiz",
+#  	"heiligenstadt",
+#  	"hildburghausen",
+#  	"jena",
+#  	"meiningen",
+#  	"mühlhausen",
+#  	"neustadt",
+#  	"sondershausen",
+#  	"stadtroda",
+#  	"suhl",
+#  	"wartburgkreis",
+#  	"weimar"
 
 connection=$1
 
@@ -32,13 +31,12 @@ fi
 mongo $connection
 use SARSCoV2
 
-/* Helper commands that need to be executed manualy to detect new fields 
-
-Show unique locations
-db.routineseq.distinct("Location")
-Find new locations
-db.routineseq.find({coordinates: null},{Location:true,_id:false})
-*/
+#Helper commands that need to be executed manualy to detect new fields 
+#
+#Show unique locations
+#db.routineseq.distinct("Location")
+#Find new locations
+#db.routineseq.find({coordinates: null},{Location:true,_id:false})
 
 db.routineseq.updateMany({Location:"weimar"},{$set:{
 coordinates:{
