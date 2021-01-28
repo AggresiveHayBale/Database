@@ -1,3 +1,4 @@
+#!/bin/sh
 /*The script will add new array with geographical coordinates based on location.
 New coordinates need to be put manualy from the website http://geojson.io.
 
