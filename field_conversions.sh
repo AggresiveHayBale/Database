@@ -1,3 +1,4 @@
+#!/bin/sh
 /*
 The script will:
 1. Add ISO date based on Isolation_Date, as a new field 'Date' used by charts. 
