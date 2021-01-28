@@ -43,28 +43,16 @@ The script will add new fields to the database with coordinates required for map
 
 Current locations in the database:
    
-   "eisenach",
-  	
-    "greiz",
-  	
-    "heiligenstadt",
-  	
-    "hildburghausen",
-  	
-    "jena",
-  	
-    "meiningen",
-  	
-    "mühlhausen",
-  	
-    "neustadt",
-  	
-    "sondershausen",
-  	
-    "stadtroda",
-  	
-    "suhl",
-  	
-    "wartburgkreis",
-  	
-    "weimar"
+    "eisenach",
+  	 "greiz",
+  	 "heiligenstadt",
+  	 "hildburghausen",
+  	 "jena",
+  	 "meiningen",
+  	 "mühlhausen",
+  	 "neustadt",
+  	 "sondershausen",
+  	 "stadtroda",
+  	 "suhl",
+  	 "wartburgkreis",
+  	 "weimar"
