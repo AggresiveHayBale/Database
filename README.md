@@ -26,15 +26,15 @@ It will omit any entry where Isolation_Date is uncertain (0,"",20200000,20210000
 
 3. Will coerce data type and format to the schema:
 
-a)change to lowercase fields : Location, Status, RKI_Valid, RKI_Submit
+a) change to lowercase fields : Location, Status, RKI_Valid, RKI_Submit
 
-b)change to uppercase field : Sample_Type, Seq_Reason 
+b) change to uppercase field : Sample_Type, Seq_Reason 
 
-c)change to integer fields : Isolation_Date, Submitting_Lab, Sequencing_Lab, Ct_Value, Analysing_Date, Ambiguous_Bases,Query_Length,Submitting_Lab
+c) change to integer fields : Isolation_Date, Submitting_Lab, Sequencing_Lab, Ct_Value, Analysing_Date, Ambiguous_Bases,Query_Length,Submitting_Lab
 
-d)change to double fields : ACGT_Nucleotide_Identity, ACGT_Nucleotide_Identity_ignoring_Ns,
+d) change to double fields : ACGT_Nucleotide_Identity, ACGT_Nucleotide_Identity_ignoring_Ns,
 
-e)change to strings fields : Sample_ID, Location, Sub_Location, Status, Primer, Seq_Reason, Sample_Type, Mutations, Storage, File_Name, GISAID_ID, Comments
+e) change to strings fields : Sample_ID, Location, Sub_Location, Status, Primer, Seq_Reason, Sample_Type, Mutations, Storage, File_Name, GISAID_ID, Comments
 
 The required parameters is connection string to the database
 
