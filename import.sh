@@ -14,4 +14,4 @@ file=$3
 server=$4
 
 
-mongoimport --host $3 --username $1 --password $2 --authenticationDatabase admin --ssl --db SARSCoV2 --collection routineseq --type json --mode merge --file $3
+mongoimport --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --db SARSCoV2 --collection routineseq --type json --mode merge --file $file
