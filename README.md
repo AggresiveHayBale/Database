@@ -1,5 +1,4 @@
 # Database
-[toc]
 
 ## import.sh
 The script will import new data to the database. 
