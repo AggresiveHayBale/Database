@@ -1,18 +1,18 @@
 #!/bin/sh
-/*
-The script will:
-1. Add ISO date based on Isolation_Date, as a new field 'Date' used by charts. 
-It will omit any entry where Isolation_Date is uncertain (0,"",20200000,20210000)
-2. Remove Date from other uncertain elements by searching strings for 0000 
-3. Will coerce data type and format to the schema:
-a)change to lowercase fields : Location, Status, RKI_Valid, RKI_Submit
-b)change to uppercase field : Sample_Type, Seq_Reason 
-c)change to integer fields : Isolation_Date, Submitting_Lab, Sequencing_Lab, Ct_Value, Analysing_Date, Ambiguous_Bases,Query_Length,Submitting_Lab
-d)hange to double fields : ACGT_Nucleotide_Identity, ACGT_Nucleotide_Identity_ignoring_Ns,
-e)change to strings fields : Sample_ID, Location, Sub_Location, Status, Primer, Seq_Reason, Sample_Type, Mutations, Storage, File_Name, GISAID_ID, Comments
-
-The script require a connection string as a parameter to access the database
-connection - connection string to log into database*/
+#
+#The script will:
+#1. Add ISO date based on Isolation_Date, as a new field 'Date' used by charts. 
+#It will omit any entry where Isolation_Date is uncertain (0,"",20200000,20210000)
+#2. Remove Date from other uncertain elements by searching strings for 0000 
+#3. Will coerce data type and format to the schema:
+#a)change to lowercase fields : Location, Status, RKI_Valid, RKI_Submit
+#b)change to uppercase field : Sample_Type, Seq_Reason 
+#c)change to integer fields : Isolation_Date, Submitting_Lab, Sequencing_Lab, Ct_Value, Analysing_Date, Ambiguous_Bases,Query_Length,Submitting_Lab
+#d)hange to double fields : ACGT_Nucleotide_Identity, ACGT_Nucleotide_Identity_ignoring_Ns,
+#e)change to strings fields : Sample_ID, Location, Sub_Location, Status, Primer, Seq_Reason, Sample_Type, Mutations, Storage, File_Name, GISAID_ID, Comments
+#
+#The script require a connection string as a parameter to access the database
+#connection - connection string to log into database
 
 connection=$1
 
@@ -25,19 +25,19 @@ fi
 mongo $connection
 use SARSCoV2
 
-/* Date */
+# Date 
 db.routineseq.find( {Isolation_Date: {$ne:[0,"","20200000","20210000"]}}).forEach(function(element){
   element.Date = ISODate(element.Isolation_Date);
   db.routineseq.save(element);
 })
 
-/*To remove Date when Isolation_Date is uncertain */
+#To remove Date when Isolation_Date is uncertain 
 db.routineseq.updateMany(
   {Isolation_Date:{$regex: '0000'}},
   {$set: {Date:""}})
 
 
-/*Coercing data to schema */
+#Coercing data to schema 
 db.routineseq.update({},
   [{
     $set: {Location: {$toLower:"$Location" },
@@ -47,8 +47,8 @@ db.routineseq.update({},
     RKI_Valid: { $toLower: "$RKI_Valid"},
     RKI_Submit: { $toLower: "$RKI_Submit"},
 
-/*Data type Change*/
-/*Numeric data*/
+#Data type Change
+#Numeric data
   Isolation_Date:
     {
     $convert:{
@@ -139,7 +139,7 @@ Submitting_Lab:
     onNull: ""
   },
 },
-/*Strings*/
+#Strings
 Sample_ID:
   {
   $convert:{
@@ -252,3 +252,4 @@ Comments:
 }}],
 { multi: true}
 )
+exit
