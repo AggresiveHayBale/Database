@@ -13,5 +13,12 @@ pass=$2
 server=$4
 file=$3
 
+#Sanity checks, check if MongoDB Database Tools were installed 
+if ! command -v mongoimport &> /dev/null
+  then
+    echo "MongoDB Database Tools could not be found, please install the tool"
+    exit 
+fi
+
 
 mongoimport --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --db SARSCoV2 --collection routineseq --type json --mode merge --file $file
