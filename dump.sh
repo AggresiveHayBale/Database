@@ -11,8 +11,8 @@
 
 usr=$1
 pass=$2
-database=$3
-server=$4
+server=$3
+database=$4
 curr_date=$(date +"%Y_%m_%d")
 
 mongodump --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --archive="mongodump_$curr_date" --db $database
