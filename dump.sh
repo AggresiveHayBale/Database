@@ -5,8 +5,8 @@
 #The script require a connection string as a parameter to access the database
 #usr - username 
 #pass - password 
-#database - database name
 #server - cluster server names (should be 3)
+#database - database name
 
 
 usr=$1
@@ -21,6 +21,27 @@ if ! command -v mongoimport
     echo "MongoDB Database Tools could not be found, please install the tool"
     exit 
 fi
+if [ -z "$1" ]
+  then
+    echo "No user specified";
+    exit 
+fi
+if [ -z "$2" ]
+  then
+    echo "No password specified";
+    exit 
+fi
+if [ -z "$3" ]
+  then
+    echo "No cluster server names specified";
+    exit 
+fi
+if [ -z "$4" ]
+  then
+    echo "No database specified";
+    exit 
+fi
+
 
 mongodump --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --archive="mongodump_$curr_date" --db $database
 
