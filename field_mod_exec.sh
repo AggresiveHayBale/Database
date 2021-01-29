@@ -45,15 +45,20 @@
 #d)hange to double fields : ACGT_Nucleotide_Identity, ACGT_Nucleotide_Identity_ignoring_Ns,
 #e)change to strings fields : Sample_ID, Location, Sub_Location, Status, Primer, Seq_Reason, Sample_Type, Mutations, Storage, File_Name, GISAID_ID, Comments
 
+#Sanity checks, check if Mongo Shell tool was installed and if connection string was supplied
+if ! command -v mongo &> /dev/null
+  then
+    echo "Mongo Shell could not be found, please install the tool"
+    exit
+fi
 
-
+connection=$1
 
 if [ -z "$1" ]
   then
     echo "No connection string supplied";
-    exit 1
+    exit 
 fi
-connection=$1
 
 mongo $connection <field_conversions.js
 mongo $connection <geo.js
