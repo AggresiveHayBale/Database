@@ -10,8 +10,8 @@
 
 usr=$1
 pass=$2
-file=$3
 server=$4
+file=$3
 
 
 mongoimport --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --db SARSCoV2 --collection routineseq --type json --mode merge --file $file
