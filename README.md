@@ -1,4 +1,13 @@
 # Database
+## Example how to update database documents 
+```
+./import.sh <Username> <Password> <Cluster> <Output file>
+
+e.g. (Not real data)
+./import.sh User Password "XXXXX-shard-XX-XX.XXX.mongodb.net:27017,XXXXX-shard-XX-X.XXXX.mongodb.net:27017,XXXXX-shard-XX-XX.XXXXX.mongodb.net:27017" test.json
+
+```
+
 ## Dependecies 
 #### import.sh, export.sh, dump.sh
 Requires MongoDB Database Tools installed it can be downloaded from https://www.mongodb.com/try/download/database-tools
@@ -7,7 +16,7 @@ Requires MongoDB Database Tools installed it can be downloaded from https://www.
 Requires Mongo Shell it can be downloaded from https://www.mongodb.com/try/download/shell
 
 ## import.sh
-The script will import new data to the database. 
+The script will import/update new data to the database. 
 
 Parameters(in order): 
 ```usr``` - username 
