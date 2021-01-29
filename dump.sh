@@ -16,7 +16,7 @@ database=$4
 curr_date=$(date +"%Y_%m_%d")
 
 #Sanity checks, check if MongoDB Database Tools were installed 
-if ! command -v mongoimport &> /dev/null
+if ! command -v mongoimport
   then
     echo "MongoDB Database Tools could not be found, please install the tool"
     exit 
