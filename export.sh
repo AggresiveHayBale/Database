@@ -6,8 +6,8 @@
 
 usr=$1
 pass=$2
-file=$3
-server=$4
+server=$3
+file=$4
 list_fields=$5
 filter=$6
 
