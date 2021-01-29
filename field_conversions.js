@@ -1,14 +1,14 @@
 db = db.getSiblingDB('SARSCoV2') 
 
-db.routineseq.find( {Isolation_Date: {$ne:[0,"","20200000","20210000"]}}).forEach(function(element){
-  element.mongodate = ISODate(element.Isolation_Date);
+db.routineseq.find( {Isolation_Date: {$ne:[0,"","20200000","20210000",20200000,20210000]}}).forEach(function(element){
+  element.Date = ISODate(element.Isolation_Date);
   db.routineseq.save(element);
 })
 
+//To remove mongodate when Isolation_Date is uncertain
 db.routineseq.updateMany(
   {Isolation_Date:{$regex: '0000'}},
-  {$set: {mongodate:""}})
-
+  {$set: {Date:""}})
 
 db.routineseq.update({},
   [{
