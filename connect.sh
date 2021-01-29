@@ -14,7 +14,7 @@ fi
 if [ -z "$1" ]
   then
     echo "No connection string supplied";
-    exit 1
+    exit 
 fi
 
 mongo $connection
