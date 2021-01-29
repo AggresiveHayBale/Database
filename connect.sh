@@ -5,7 +5,7 @@
 connection=$1
 
 #Sanity checks, check if MongoDB Database Tools were installed 
-if ! command -v mongo &> /dev/null
+if ! command -v mongo 
   then
     echo "MongoDB Shell could not be found, please install the tool"
     exit 
