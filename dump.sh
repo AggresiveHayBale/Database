@@ -15,6 +15,13 @@ server=$3
 database=$4
 curr_date=$(date +"%Y_%m_%d")
 
+#Sanity checks, check if MongoDB Database Tools were installed 
+if ! command -v mongoimport &> /dev/null
+  then
+    echo "MongoDB Database Tools could not be found, please install the tool"
+    exit 
+fi
+
 mongodump --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --archive="mongodump_$curr_date" --db $database
 
 
