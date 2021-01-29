@@ -1,5 +1,15 @@
 db = db.getSiblingDB('SARSCoV2') 
 
+db.routineseq.find( {Isolation_Date: {$ne:[0,"","20200000","20210000"]}}).forEach(function(element){
+  element.mongodate = ISODate(element.Isolation_Date);
+  db.routineseq.save(element);
+})
+
+db.routineseq.updateMany(
+  {Isolation_Date:{$regex: '0000'}},
+  {$set: {mongodate:""}})
+
+
 db.routineseq.update({},
   [{
     $set: {Location: {$toLower:"$Location" },
