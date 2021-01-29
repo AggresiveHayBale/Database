@@ -1,4 +1,10 @@
 # Database
+## Dependecies 
+#### import.sh, export.sh, dump.sh
+Requires MongoDB Database Tools installed it can be downloaded from https://www.mongodb.com/try/download/database-tools
+
+#### field_mod_exec.sh 
+Requires Mongo Shell it can be downloaded from https://www.mongodb.com/try/download/shell
 
 ## import.sh
 The script will import new data to the database. 
