@@ -1,7 +1,7 @@
 # Database
 ## Example how to update database documents 
 ```
-./import.sh <Username> <Password> <Cluster(specified as last position in Database access on Basecamp)> <Output file>
+./import.sh <Username> <Password> <Cluster(specified in Database access on Basecamp(last position)> <Output file>
 
 e.g. (Not real data)
 ./import.sh User Password "XXXXX-shard-XX-XX.XXX.mongodb.net:27017,XXXXX-shard-XX-X.XXXX.mongodb.net:27017,XXXXX-shard-XX-XX.XXXXX.mongodb.net:27017" test.json
