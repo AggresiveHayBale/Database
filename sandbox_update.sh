@@ -43,8 +43,8 @@ if [ -z "$4" ]
 fi
 
 
-mongodump --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --archive="Sandbox" --db $database
+mongodump --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --archive="Sandbox" --db $database 
 
-mongorestore --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --archive="Sandbox" --nsFrom='SARSCoV2.*' --nsTo='Sandbox.*'
+mongorestore --host $server --username $usr --password $pass --authenticationDatabase admin --ssl --archive="Sandbox" --nsFrom='SARSCoV2.*' --nsTo='Sandbox.*' --drop
 
 rm Sandbox
