@@ -95,3 +95,6 @@ Current locations in the database:
   	 "suhl",
   	 "wartburgkreis",
   	 "weimar"
+
+## sandbox_update.sh 
+The script will clone the database and create a copy called "Sandbox". Use it to test new things that could damage the original data.
