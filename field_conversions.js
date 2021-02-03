@@ -21,7 +21,6 @@ db.routineseq.update({},
     Seq_Reason: { $toUpper: "$Seq_Reason" },
     Sample_Type: { $toUpper: "$Sample_Type" },
     RKI_Valid: { $toLower: "$RKI_Valid"},
-    RKI_Submit: { $toLower: "$RKI_Submit"},
   Isolation_Date:
     {
     $convert:{
