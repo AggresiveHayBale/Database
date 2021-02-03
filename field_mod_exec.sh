@@ -25,6 +25,10 @@
 # 	"suhl",
 #  	"wartburgkreis",
 #  	"weimar"
+#   "apolda"
+#   "schleiz"
+#   "sonneberg"
+#   "sommerda"
 
 #Helper commands that need to be executed manualy to detect new fields 
 #
