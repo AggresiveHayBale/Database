@@ -105,3 +105,35 @@ coordinates:{
 }
 }})
 
+db.routineseq.updateMany({Location:"apolda"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.512813568115234,
+  "Lat": 51.02368940660312
+}
+}})
+
+db.routineseq.updateMany({Location:"schleiz"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.808907985687256,
+  "Lat": 50.57741851285615
+}
+}})
+
+db.routineseq.updateMany({Location:"sonneberg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.168975830078125,
+  "Lat":  50.355482895378984
+}
+}})
+
+db.routineseq.updateMany({Location:"sömmerda"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.115717887878418,
+  "Lat": 51.162660117344636
+}
+}})
+
