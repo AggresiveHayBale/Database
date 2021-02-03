@@ -10,6 +10,10 @@ db.routineseq.updateMany(
   {Isolation_Date:{$regex: '0000'}},
   {$set: {Date:""}})
 
+db.routineseq.updateMany(
+    {Isolation_Date:""},
+    {$set: {Date:""}})
+
 db.routineseq.update({},
   [{
     $set: {Location: {$toLower:"$Location" },
