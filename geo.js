@@ -137,3 +137,5 @@ coordinates:{
 }
 }})
 
+
+db.routineseq.find({coordinates: null},{Location:true,_id:true})
