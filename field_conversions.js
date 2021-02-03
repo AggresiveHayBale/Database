@@ -1,4 +1,4 @@
-db = db.getSiblingDB('SARSCoV2') 
+db = db.getSiblingDB('SARSCoV2')
 
 db.routineseq.find( {Isolation_Date: {$ne:[0,"","20200000","20210000",20200000,20210000]}}).forEach(function(element){
   element.Date = ISODate(element.Isolation_Date);
@@ -20,7 +20,6 @@ db.routineseq.update({},
     Status: { $toLower: "$Status" },
     Seq_Reason: { $toUpper: "$Seq_Reason" },
     Sample_Type: { $toUpper: "$Sample_Type" },
-    RKI_Valid: { $toLower: "$RKI_Valid"},
   Isolation_Date:
     {
     $convert:{
