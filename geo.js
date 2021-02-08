@@ -1,4 +1,4 @@
-db = db.getSiblingDB('Sandbox')
+db = db.getSiblingDB('SARSCoV2')
 
 db.routineseq.updateMany({Location:"weimar"},{$set:{
 coordinates:{
