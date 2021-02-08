@@ -16,11 +16,11 @@ coordinates:{
 }
 }})
 
-db.routineseq.updateMany({Location:"neustadt"},{$set:{
+db.routineseq.updateMany({Location:"neustadt am rennsteig"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 11.744384765625,
-  "Lat": 50.73667242148789
+  "Long": 10.933735370635986,
+  "Lat": 50.58286874674231
 }
 }})
 
