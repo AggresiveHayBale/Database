@@ -56,13 +56,25 @@ if ! command -v mongo
     exit
 fi
 
-connection=$1
+usr=$1
+pass=$2
+server=$3
 
 if [ -z "$1" ]
   then
-    echo "No connection string supplied";
+    echo "No user specified";
+    exit 
+fi
+if [ -z "$2" ]
+  then
+    echo "No password specified";
+    exit 
+fi
+if [ -z "$3" ]
+  then
+    echo "No cluster server names specified";
     exit 
 fi
 
-mongo $connection <field_conversions.js
-mongo $connection <geo.js
+mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <field_conversions.js
+mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <geo.js
