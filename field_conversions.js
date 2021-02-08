@@ -1,4 +1,4 @@
-db = db.getSiblingDB('Sandbox')
+db = db.getSiblingDB('SARSCoV2')
 
 db.routineseq.find( {Isolation_Date: {$ne:[0,"","20200000","20210000",20200000,20210000]}}).forEach(function(element){
   element.Date = ISODate(element.Isolation_Date);
