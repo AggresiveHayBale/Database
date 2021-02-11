@@ -391,7 +391,7 @@ coordinates:{
 db.routineseq.updateMany({Location:"elxleben-sömmerda"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 10.935001373291016,,
+  "Long": 10.935001373291016,
   "Lat": 51.06602319167178
 }
 }})
