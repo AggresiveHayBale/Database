@@ -292,4 +292,110 @@ coordinates:{
 }})
 
 
+db.routineseq.updateMany({Location:"bad blankenburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.272337436676025,
+  "Lat": 50.68289774882372
+}
+}})
+
+db.routineseq.updateMany({Location:"geisa"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 9.950244426727295,
+  "Lat": 50.716718787760264
+}
+}})
+
+db.routineseq.updateMany({Location:"langenwolschendorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.957770586013794,
+  "Lat": 50.63658279404718
+}
+}})
+
+db.routineseq.updateMany({Location:"altenburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.433176040649414,
+  "Lat": 50.98512636188829
+}
+}})
+
+db.routineseq.updateMany({Location:"schleusingen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.754274129867554,
+  "Lat": 50.50979684938849
+}
+}})
+
+db.routineseq.updateMany({Location:"saalburg-ebersdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.666643619537354,
+  "Lat": 50.48558959576248
+}
+}})
+
+db.routineseq.updateMany({Location:"pößneck"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.595382690429688,
+  "Lat": 50.69498968560211
+}
+}})
+
+db.routineseq.updateMany({Location:"coburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.964527130126953,
+  "Lat": 50.258126104855606
+}
+}})
+
+db.routineseq.updateMany({Location:"heldburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.725510120391846,
+  "Lat": 50.27946735926055
+}
+}})
+
+db.routineseq.updateMany({Location:"buttstädt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.416897773742676,
+  "Lat": 51.121828936924416
+}
+}})
+
+db.routineseq.updateMany({Location:"sölden"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 7.809455394744873,
+  "Lat": 47.93261905746725
+}
+}})
+
+db.routineseq.updateMany({Location:"saalburg-ebersdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.66666507720947,
+  "Lat": 50.48570564545495
+}
+}})
+
+db.routineseq.updateMany({Location:"elxleben-sömmerda"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.935001373291016,,
+  "Lat": 51.06602319167178
+}
+}})
+
+
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
+
