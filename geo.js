@@ -286,8 +286,8 @@ coordinates:{
 db.routineseq.updateMany({Location:"hoerselberg-hainich"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 10.228271484374998,
-  "Lat": 50.810056832051536
+  "Long": 10.429673194885254,
+  "Lat": 50.98015512263256
 }
 }})
 
@@ -383,16 +383,16 @@ coordinates:{
 db.routineseq.updateMany({Location:"saalburg-ebersdorf"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 11.66666507720947,
-  "Lat": 50.48570564545495
+  "Long": 11.732518672943113,
+  "Lat": 50.502181808328416
 }
 }})
 
 db.routineseq.updateMany({Location:"elxleben-sömmerda"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 10.935001373291016,
-  "Lat": 51.06602319167178
+  "Long": 10.94789743423462,
+  "Lat": 51.04688469442193
 }
 }})
 
