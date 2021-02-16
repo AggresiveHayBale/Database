@@ -28,7 +28,7 @@ if [ -z "$4" ]
 fi
 
 
-mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <coord_agg.js
+mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <cord_agg.js
 
 mongoexport --host $cluster\
  --username $usr --password $pass \
