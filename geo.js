@@ -332,14 +332,6 @@ coordinates:{
 }
 }})
 
-db.routineseq.updateMany({Location:"saalburg-ebersdorf"},{$set:{
-coordinates:{
-  "type": "Point",
-  "Long": 11.666643619537354,
-  "Lat": 50.48558959576248
-}
-}})
-
 db.routineseq.updateMany({Location:"pößneck"},{$set:{
 coordinates:{
   "type": "Point",
