@@ -388,6 +388,37 @@ coordinates:{
 }
 }})
 
+db.routineseq.updateMany({Location:"bad salzungen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.232713,
+  "Lat": 50.811654
+}
+}})
+
+db.routineseq.updateMany({Location:"nordhausen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.787753838178764,
+  "Lat": 51.49463290747446
+}
+}})
+
+db.routineseq.updateMany({Location:"tonna"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.734350681304932,
+  "Lat": 51.087283404467804
+}
+}})
+
+db.routineseq.updateMany({Location:"goldlauter"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.74564278125763,
+  "Lat": 50.63054160018057
+}
+}})
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
