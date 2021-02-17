@@ -419,6 +419,62 @@ coordinates:{
   "Lat": 50.63054160018057
 }
 }})
+db.routineseq.updateMany({Location:"schmölln"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.349748611450195,
+  "Lat": 50.89534604722514
+}
+}})
+db.routineseq.updateMany({Location:"frankenblick"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.119236946105957,
+  "Lat": 50.39388283200593
+}
+}})
+db.routineseq.updateMany({Location:"remptendorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.659841537475584,
+  "Lat": 50.52840622459914
+}
+}})
+db.routineseq.updateMany({Location:"themar"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.617105960845947,
+  "Lat": 50.504829470820944
+}
+}})
+db.routineseq.updateMany({Location:"sollstedt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.537261962890623,
+  "Lat": 51.41443779146823
+}
+}})
+db.routineseq.updateMany({Location:"veilsdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.810375213623047,
+  "Lat": 50.408189325313096
+}
+}})
+db.routineseq.updateMany({Location:"grabfeld"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.440444946289062,
+  "Lat": 50.45389736980437
+}
+}})
+db.routineseq.updateMany({Location:"hirschberg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.820216178894043,
+  "Lat": 50.40359421123975
+}
+}})
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
