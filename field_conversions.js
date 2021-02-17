@@ -221,3 +221,9 @@ db.routineseq.updateMany(
 db.routineseq.updateMany(
     {Isolation_Date:""},
     {$set: {Date:""}})
+db.routineseq.updateMany(
+    {Isolation_Date:20200000},
+    {$set: {Date:""}})
+db.routineseq.updateMany(
+    {Isolation_Date:20210000},
+    {$set: {Date:""}})
