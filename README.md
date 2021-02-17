@@ -80,21 +80,16 @@ The script will add new fields to the database with coordinates required for map
 
 The required parameter for the script is connection string to the database
 
-Current locations in the database:
-   
-    "eisenach",
-  	 "greiz",
-  	 "heiligenstadt",
-  	 "hildburghausen",
-  	 "jena",
-  	 "meiningen",
-  	 "mühlhausen",
-  	 "neustadt",
-  	 "sondershausen",
-  	 "stadtroda",
-  	 "suhl",
-  	 "wartburgkreis",
-  	 "weimar"
 
 ## sandbox_update.sh 
 The script will clone the database and create a copy called "Sandbox". Use it to test new things that could damage the original data.
+
+## PLZtoLoc.js
+Will add location using PLZ information
+
+
+## AgreggationforPLZ.sh
+Will return coordinates of a point using PLT information
+
+## log_download.sh 
+Will download logs from db
