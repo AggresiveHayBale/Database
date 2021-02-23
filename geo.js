@@ -483,6 +483,71 @@ coordinates:{
   "Lat": 52.52415927884915
 }
 }})
+db.routineseq.updateMany({Location:"ziegenrück"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.65001392364502,
+  "Lat": 50.61344648135313
+}
+}})
+db.routineseq.updateMany({Location:"zeulenroda-triebes"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.980290412902832,
+  "Lat": 50.64891625912045
+}
+}})
+db.routineseq.updateMany({Location:"berlstedt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.245193481445312,
+  "Lat": 51.061465197550305
+}
+}})
+db.routineseq.updateMany({Location:"wunsiedel"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.002735137939453,
+  "Lat": 50.03828906000424
+}
+}})
+db.routineseq.updateMany({Location:"bad colberg-heldburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.799689292907715,
+  "Lat": 50.276148846209104
+}
+}})
+db.routineseq.updateMany({Location:"kaltennordheim"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.15784740447998,
+  "Lat": 50.6268154416189
+}
+}})
+db.routineseq.updateMany({Location:"großbreitenbach"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.997893810272217,
+  "Lat": 50.581996751705184
+}
+}})
+db.routineseq.updateMany({Location:"geratal"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.848312377929688,
+  "Lat": 50.71896042963921
+}
+}})
+
+db.routineseq.updateMany({Location:"münchenbernsdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.848312377929688,
+  "Lat": 50.71896042963921
+}
+}})
+
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
