@@ -78,4 +78,4 @@ fi
 
 mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <field_conversions.js
 mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <geo.js
-#mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <PLZtoLoc.js
+mongo --host $server --authenticationDatabase admin --ssl --username $usr --password $pass <PLZtoLoc.js
