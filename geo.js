@@ -1,5 +1,7 @@
 db = db.getSiblingDB('SARSCoV2')
 
+db.routineseq.update( {"Location" : "saalfeld/saale"}, { $rename: {'Location': 'saalfeld'}},{ multi: true})
+
 db.routineseq.updateMany({Location:"weimar"},{$set:{
 coordinates:{
   "type": "Point",
