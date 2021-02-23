@@ -4,7 +4,12 @@ db.routineseq.aggregate(
   PLZ: {
     $exists: true
   },
-  Location: {"$in":[null,""]}
+  Location: {
+    $in: [
+      null,
+      ''
+    ]
+  }
 }}, {$lookup: {
   from: 'GeoData',
   localField: 'PLZ',
@@ -16,4 +21,7 @@ db.routineseq.aggregate(
   path: '$Location'
 }}, {$project: {
   TempLoc: 0
-}}])
+}}, {$merge: {
+  into: 'routineseq',
+  on: '_id'
+}}]
