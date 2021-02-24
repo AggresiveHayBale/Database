@@ -12,23 +12,7 @@
 
 
 # Current locations in the database:
-#   "eisenach",
-#  	"greiz",
-#  	"heiligenstadt",
-#  	"hildburghausen",
-#  	"jena",
-#  	"meiningen",
-#  	"mühlhausen",
-#  	"neustadt",
-#  	"sondershausen",
-#  	"stadtroda",
-# 	"suhl",
-#  	"wartburgkreis",
-#  	"weimar"
-#   "apolda"
-#   "schleiz"
-#   "sonneberg"
-#   "sommerda"
+#look geo.js file
 
 #Helper commands that need to be executed manualy to detect new fields 
 #
