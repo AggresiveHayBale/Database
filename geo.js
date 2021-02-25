@@ -565,7 +565,27 @@ coordinates:{
   "Lat": 51.587216426382035
 }
 }})
-
+db.routineseq.updateMany({Location:"treuen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.306747436523438,
+  "Lat": 50.53885372703046
+}
+}})
+db.routineseq.updateMany({Location:"zwickau"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.495918273925781,
+  "Lat": 50.717764900646586
+}
+}})
+db.routineseq.updateMany({Location:"bad sulza"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.625080108642578,
+  "Lat": 51.087997750516124
+}
+}})
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
