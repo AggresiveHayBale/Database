@@ -638,5 +638,50 @@ coordinates:{
   "Lat": 50.06821366398788
 }
 }})
+db.routineseq.updateMany({Location:"naila"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.708679199218748,
+  "Lat": 50.32913511022061
+}
+}})
+db.routineseq.updateMany({Location:"kirschkau"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.887636184692383,
+  "Lat": 50.604486334677134
+}
+}})
+db.routineseq.updateMany({Location:"dermbach"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.119781494140625,
+  "Lat": 50.71580851469203
+}
+}})
+db.routineseq.updateMany({Location:"berga/elster"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.160749435424803,
+  "Lat": 50.75027785362307
+}
+}})
+db.routineseq.updateMany({Location:"falkenstein/vogtl."},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.370433807373047,
+  "Lat": 50.47673484653018
+}
+}})
+db.routineseq.updateMany({Location:"brahmenau"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.159976959228516,
+  "Lat": 50.92224423959913
+}
+}})
+
+
+
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
