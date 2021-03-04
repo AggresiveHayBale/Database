@@ -681,7 +681,13 @@ coordinates:{
 }
 }})
 
-
+db.routineseq.updateMany({Location:"kamsdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.441831588745117,
+  "Lat": 50.64499766039238
+}
+}})
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
