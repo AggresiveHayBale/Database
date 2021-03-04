@@ -610,5 +610,33 @@ coordinates:{
   "Lat": 50.96377869044724
 }
 }})
+db.routineseq.updateMany({Location:"ronneburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.181262969970701,
+  "Lat": 50.86279849464914
+}
+}})
+db.routineseq.updateMany({Location:"föritztal"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.231803894042969,
+  "Lat": 50.33647671038328
+}
+}})
+db.routineseq.updateMany({Location:"triptis"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.863861083984375,
+  "Lat": 50.73547734438833
+}
+}})
+db.routineseq.updateMany({Location:"trebgast"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.551094055175781,
+  "Lat": 50.06821366398788
+}
+}})
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
