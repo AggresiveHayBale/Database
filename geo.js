@@ -587,5 +587,28 @@ coordinates:{
 }
 }})
 
+db.routineseq.updateMany({Location:"neuhaus am rennweg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.138720512390137,
+  "Lat": 50.50998789197456
+}
+}})
+
+db.routineseq.updateMany({Location:"bilzingsleben kannawurf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.067953109741211,
+  "Lat": 51.28135358796176
+}
+}})
+
+db.routineseq.updateMany({Location:"gerstungen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.064506530761719,
+  "Lat": 50.96377869044724
+}
+}})
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
