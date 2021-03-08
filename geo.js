@@ -688,6 +688,20 @@ coordinates:{
   "Lat": 50.64499766039238
 }
 }})
+db.routineseq.updateMany({Location:"mertendorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.786999702453613,
+  "Lat": 50.99179887334924
+}
+}})
+db.routineseq.updateMany({Location:"chursdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.853389739990234,
+  "Lat": 50.663662499406755
+}
+}})
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
