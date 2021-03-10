@@ -702,6 +702,35 @@ coordinates:{
   "Lat": 50.663662499406755
 }
 }})
+db.routineseq.updateMany({Location:"grammetal"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.219873428344727,
+  "Lat": 50.95761576547442
+}
+}})
+db.routineseq.updateMany({Location:"zeitz"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.135086059570312,
+  "Lat": 51.04894863380694
+}
+}})
+db.routineseq.updateMany({Location:"bad klosterlausnitz"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.867959499359129,
+  "Lat": 50.91637342521736
+}
+}})
+db.routineseq.updateMany({Location:"rosenthal am rennsteig"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.6839599609375,
+  "Lat": 50.41806184284324
+}
+}})
+
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
