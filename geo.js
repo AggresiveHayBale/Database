@@ -730,6 +730,20 @@ coordinates:{
   "Lat": 50.41806184284324
 }
 }})
+db.routineseq.updateMany({Location:"worbis"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.362510681152344,
+  "Lat": 51.41878698731156
+}
+}})
+db.routineseq.updateMany({Location:"großfahner"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.827090740203856,
+  "Lat": 51.055767073773914
+}
+}})
 
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
