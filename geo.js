@@ -780,6 +780,19 @@ coordinates:{
   "Lat": 50.940311958833696
 }
 }})
-
+db.routineseq.updateMany({Location:"camburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.705524921417236,
+  "Lat": 51.05139016883385
+}
+}})
+db.routineseq.updateMany({Location:"waldems"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 8.375701904296873,
+  "Lat": 50.26783783575824
+}
+}})
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
