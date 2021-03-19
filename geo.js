@@ -745,6 +745,41 @@ coordinates:{
 }
 }})
 
+db.routineseq.updateMany({Location:"erfurt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.025123596191406,
+  "Lat": 50.97753420069911
+}
+}})
+db.routineseq.updateMany({Location:"ebeleben"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.731925964355469,
+  "Lat": 51.28468204923537
+}
+}})
+db.routineseq.updateMany({Location:"artern/unstrut"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.295146942138672,
+  "Lat": 51.36256350834222
+}
+}})
+db.routineseq.updateMany({Location:"hermsdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.857852935791016,
+  "Lat": 50.89610395554359
+}
+}})
+db.routineseq.updateMany({Location:"lehnstedt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.436853408813477,
+  "Lat": 50.940311958833696
+}
+}})
 
 db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
