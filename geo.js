@@ -794,5 +794,5 @@ coordinates:{
   "Lat": 50.26783783575824
 }
 }})
-db.routineseq.find({coordinates: null},{Location:true,_id:true})
 
+db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
