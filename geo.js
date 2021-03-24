@@ -794,5 +794,53 @@ coordinates:{
   "Lat": 50.26783783575824
 }
 }})
-
+db.routineseq.updateMany({Location:"gotha"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.696220397949219,
+  "Lat": 50.94609863604379
+}
+}})
+db.routineseq.updateMany({Location:"tanna"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.861114501953125,
+  "Lat": 50.49311858224733
+}
+}})
+db.routineseq.updateMany({Location:"wasungen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.369720458984375,
+  "Lat": 50.66447857675186
+}
+}})
+db.routineseq.updateMany({Location:"wutha-farnroda"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.390491485595703,
+  "Lat": 50.95496653774911
+}
+}})
+db.routineseq.updateMany({Location:"greußen clingen großenehrich"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.949077606201172,
+  "Lat": 51.228602886556295
+}
+}})
+db.routineseq.updateMany({Location:"rastenberg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.420116424560545,
+  "Lat": 51.175684029532064
+}
+}})
+db.routineseq.updateMany({Location:"kahla"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.588172912597656,
+  "Lat": 50.80197499369227
+}
+}})
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
