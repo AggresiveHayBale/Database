@@ -843,4 +843,32 @@ coordinates:{
   "Lat": 50.80197499369227
 }
 }})
+db.routineseq.updateMany({Location:"crossen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.984024047851562,
+  "Lat": 50.96458954077095
+}
+}})
+db.routineseq.updateMany({Location:"mylau"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.267909049987793,
+  "Lat": 50.618048446494534
+}
+}})
+db.routineseq.updateMany({Location:"weida"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.06144332885742,
+  "Lat": 50.77348757530155
+}
+}})
+db.routineseq.updateMany({Location:"krölpa"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.539421081542969,
+  "Lat": 50.67709876697171
+}
+}})
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
