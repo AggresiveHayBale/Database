@@ -878,4 +878,26 @@ coordinates:{
   "Lat": 51.249130209480654
 }
 }})
+db.routineseq.updateMany({Location:"unterwellenborn"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.436080932617188,
+  "Lat": 50.65871132615369
+}
+}})
+db.routineseq.updateMany({Location:"bad bibra"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.583709716796875,
+  "Lat": 51.20656075093558
+}
+}})
+db.routineseq.updateMany({Location:"bürgel"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.757087707519531,
+  "Lat": 50.94220487644014
+}
+}})
+
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
