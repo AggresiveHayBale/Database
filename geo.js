@@ -899,5 +899,12 @@ coordinates:{
   "Lat": 50.94220487644014
 }
 }})
+db.routineseq.updateMany({Location:"leinefelde"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.326805114746094,
+  "Lat": 51.38849461063877
+}
+}})
 
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
