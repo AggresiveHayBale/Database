@@ -906,5 +906,19 @@ coordinates:{
   "Lat": 51.38849461063877
 }
 }})
+db.routineseq.updateMany({Location:"marolteroden"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.680856704711914,
+  "Lat": 51.23161270058763
+}
+}})
+db.routineseq.updateMany({Location:"crock"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.885863304138184,
+  "Lat": 50.45166015193687
+}
+}})
 
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
