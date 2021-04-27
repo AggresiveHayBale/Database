@@ -920,5 +920,13 @@ coordinates:{
   "Lat": 50.45166015193687
 }
 }})
+db.routineseq.updateMany({Location:"bad frankenhausen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.098594665527342,
+  "Lat": 51.35570324008831
+}
+}})
+
 
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
