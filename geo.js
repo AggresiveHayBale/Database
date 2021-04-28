@@ -906,7 +906,7 @@ coordinates:{
   "Lat": 51.38849461063877
 }
 }})
-db.routineseq.updateMany({Location:"marolteroden"},{$set:{
+db.routineseq.updateMany({Location:"marolterode"},{$set:{
 coordinates:{
   "type": "Point",
   "Long": 10.680856704711914,
