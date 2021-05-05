@@ -927,6 +927,20 @@ coordinates:{
   "Lat": 51.35570324008831
 }
 }})
+db.routineseq.updateMany({Location:"ummerstadt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.811748504638672,
+  "Lat": 50.25801635646916
+}
+}})
+db.routineseq.updateMany({Location:"dingelstädt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.321483612060547,
+  "Lat": 51.315592999493774
+}
+}})
 
 
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
