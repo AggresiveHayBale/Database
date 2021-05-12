@@ -948,6 +948,33 @@ coordinates:{
   "Lat": 51.15092468369808
 }
 }})
-
+db.routineseq.updateMany({Location:"westgreußen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.919466018676758,
+  "Lat": 51.23773921373903
+}
+}})
+db.routineseq.updateMany({Location:"voigtstedt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.307506561279297,
+  "Lat": 51.39208308934901
+}
+}})
+db.routineseq.updateMany({Location:"roßleben-wiehe"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.43470764160156,
+  "Lat": 51.29692012275674
+}
+}})
+db.routineseq.updateMany({Location:"artern"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.292228698730469,
+  "Lat": 51.3621347716774
+}
+}})
 
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
