@@ -1172,7 +1172,41 @@ coordinates:{
   "Lat": 50.46427940826988
 }
 }})
-
+db.routineseq.updateMany({Location:"leinefelde"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.326805114746094,
+  "Lat": 51.38870885607338
+}
+}})
+db.routineseq.updateMany({Location:"bad tennstedt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.838356018066404,
+  "Lat": 51.1537242325363
+}
+}})
+db.routineseq.updateMany({Location:"oberzella"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.037899017333984,
+  "Lat": 50.84098812882909
+}
+}})
+db.routineseq.updateMany({Location:"pferdsdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 9.96434211730957,
+  "Lat": 50.798340422778814
+}
+}})
+db.routineseq.updateMany({Location:"ruhla"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.366802215576172,
+  "Lat": 50.89177288472538
+}
+}})
 
 
 
