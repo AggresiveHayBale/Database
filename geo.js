@@ -983,5 +983,199 @@ coordinates:{
   "Lat": 50.987665811292516
 }
 }})
+db.routineseq.updateMany({Location:"heldrungen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.219015121459961,
+  "Lat": 51.298932651452496
+}
+}})
+db.routineseq.updateMany({Location:"auerbach/vogtl."},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.398200035095215,
+  "Lat": 50.509073609738834
+}
+}})
+db.routineseq.updateMany({Location:"bad köstritz"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.011833190917969,
+  "Lat": 50.93008887202655
+}
+}})
+db.routineseq.updateMany({Location:"barchfeld-immelborn"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.294253826141357,
+  "Lat": 50.79787930029144
+}
+}})
+db.routineseq.updateMany({Location:"bergen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.275419235229492,
+  "Lat": 50.47252877160703
+}
+}})
+db.routineseq.updateMany({Location:"berka/werra"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.067682266235352,
+  "Lat": 50.9391491283791
+}
+}})
+db.routineseq.updateMany({Location:"eisfeld"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.908823013305664,
+  "Lat": 50.42683872471135
+}
+}})
+db.routineseq.updateMany({Location:"elleben"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.09292984008789,
+  "Lat": 50.86111905256077
+}
+}})
+db.routineseq.updateMany({Location:"elsterberg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.16880679130554,
+  "Lat": 50.60840150229049
+}
+}})
+db.routineseq.updateMany({Location:"gebesee"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.16880679130554,
+  "Lat": 50.60840150229049
+}
+}})
+db.routineseq.updateMany({Location:"gefell"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.861114501953125,
+  "Lat": 50.4373907029876
+}
+}})
+db.routineseq.updateMany({Location:"großrudestedt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.099967956542969,
+  "Lat": 51.09198710293626
+}
+}})
+db.routineseq.updateMany({Location:"ilmenau"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.913200378417969,
+  "Lat": 50.686235407574976
+}
+}})
+db.routineseq.updateMany({Location:"kaulsdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.431617736816406,
+  "Lat": 50.621152476382164
+}
+}})
+db.routineseq.updateMany({Location:"königsee"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.097908020019531,
+  "Lat": 50.66132299907784
+}
+}})
+db.routineseq.updateMany({Location:"langenleuba-niederhain"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.586383819580078,
+  "Lat": 50.95637226922794
+}
+}})
+db.routineseq.updateMany({Location:"lehesten"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.579160690307617,
+  "Lat": 50.98156009203553
+}
+}})
+db.routineseq.updateMany({Location:"lengenfeld"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.36562728881836,
+  "Lat": 50.56982801149406
+}
+}})
+db.routineseq.updateMany({Location:"lobenstein"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.639328002929688,
+  "Lat": 50.44985322241888
+}
+}})
+db.routineseq.updateMany({Location:"meuselwitz"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.297649383544922,
+  "Lat": 51.04700610516692
+}
+}})
+db.routineseq.updateMany({Location:"mohlsdorf-teichwolframsdorf"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.247095108032227,
+  "Lat": 50.720373288220316
+}
+}})
+db.routineseq.updateMany({Location:"probstzella"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.380205154418944,
+  "Lat": 50.531543446202086
+}
+}})
+db.routineseq.updateMany({Location:"rochlitz"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.798213958740233,
+  "Lat": 51.04592688738677
+}
+}})
+db.routineseq.updateMany({Location:"straußfurt"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.989675521850586,
+  "Lat": 51.16222951198837
+}
+}})
+db.routineseq.updateMany({Location:"unterbreizbach"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 9.97833251953125,
+  "Lat": 50.817215413611876
+}
+}})
+db.routineseq.updateMany({Location:"weißensee"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.06649398803711,
+  "Lat": 51.19849391807914
+}
+}})
+db.routineseq.updateMany({Location:"wurzbach"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.53839111328125,
+  "Lat": 50.46427940826988
+}
+}})
+
+
+
+
 
 db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
+db.routineseq.distinct("Location",{coordinates: null})
