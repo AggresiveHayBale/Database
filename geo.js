@@ -1207,6 +1207,28 @@ coordinates:{
   "Lat": 50.89177288472538
 }
 }})
+db.routineseq.updateMany({Location:"frankenblick"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.146831512451172,
+  "Lat": 50.36932194982437
+}
+}})
+db.routineseq.updateMany({Location:"großschwabhausen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.489381790161131,
+  "Lat": 50.93755356949969
+}
+}})
+db.routineseq.updateMany({Location:"kölleda"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.246051788330078,
+  "Lat": 51.18784353547339
+}
+}})
+
 
 
 
