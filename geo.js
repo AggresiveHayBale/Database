@@ -1228,6 +1228,13 @@ coordinates:{
   "Lat": 51.18784353547339
 }
 }})
+db.routineseq.updateMany({Location:"chemnitz"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 12.919921874999998,
+  "Lat": 50.830228205617445
+}
+}})
 
 
 
