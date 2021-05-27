@@ -1235,6 +1235,50 @@ coordinates:{
   "Lat": 50.830228205617445
 }
 }})
+db.routineseq.updateMany({Location:"bauerbach"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.391263961791992,
+  "Lat": 50.498250984068115
+}
+}})
+db.routineseq.updateMany({Location:"breitungen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.333328247070312,
+  "Lat": 50.75817859508893
+}
+}})
+db.routineseq.updateMany({Location:"großburschla"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.172181129455566,
+  "Lat": 51.13643969024041
+}
+}})
+db.routineseq.updateMany({Location:"jüterbog"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 13.077163696289062,
+  "Lat": 51.991222950124396
+}
+}})
+db.routineseq.updateMany({Location:"leimbach"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.194282531738281,
+  "Lat": 50.8129854753031
+}
+}})
+db.routineseq.updateMany({Location:"seebach"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.417013168334961,
+  "Lat": 50.9164816496951
+}
+}})
+
+
 
 
 
