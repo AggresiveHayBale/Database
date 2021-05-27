@@ -1281,8 +1281,5 @@ coordinates:{
 
 
 
-
-
-
-db.routineseq.find({coordinates: null},{Sample_ID:true, Location:true,_id:true, PLZ:true})
+db.routineseq.find({coordinates: null,PLZ:{$ne:""},PLZ:{$exist:true}},{Sample_ID:true, Location:true, PLZ:true})
 db.routineseq.distinct("Location",{coordinates: null})
