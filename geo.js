@@ -1277,7 +1277,20 @@ coordinates:{
   "Lat": 50.9164816496951
 }
 }})
-
+db.routineseq.updateMany({Location:"bad liebenstein"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.349121093749998,
+  "Lat": 50.81764923177739
+}
+}})
+db.routineseq.updateMany({Location:"bad salzuflen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 8.750953674316406,
+  "Lat": 52.08288179572668
+}
+}})
 
 
 
