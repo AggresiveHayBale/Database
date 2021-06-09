@@ -1291,6 +1291,13 @@ coordinates:{
   "Lat": 52.08288179572668
 }
 }})
+db.routineseq.updateMany({Location:"haina"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 8.973426818847656,
+  "Lat": 51.02779226886817
+}
+}})
 
 
 
