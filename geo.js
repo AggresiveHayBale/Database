@@ -822,7 +822,7 @@ coordinates:{
   "Lat": 50.95496653774911
 }
 }})
-db.routineseq.updateMany({Location:"greußen clingen großenehrich"},{$set:{
+db.routineseq.updateMany({Location:"greußen"},{$set:{
 coordinates:{
   "type": "Point",
   "Long": 10.949077606201172,
