@@ -177,15 +177,6 @@ Storage:
     onNull: ""
   },
 },
-File_Name:
-  {
-  $convert:{
-    input: "$File_Name",
-    to:"string",
-    onError: "$File_Name",
-    onNull: ""
-  },
-},
 GISAID_ID:
   {
   $convert:{
