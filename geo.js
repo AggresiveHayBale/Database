@@ -1049,8 +1049,8 @@ coordinates:{
 db.routineseq.updateMany({Location:"gebesee"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 12.16880679130554,
-  "Lat": 50.60840150229049
+  "Long": 10.931396484375,
+  "Lat": 51.115808231423074
 }
 }})
 db.routineseq.updateMany({Location:"gefell"},{$set:{
