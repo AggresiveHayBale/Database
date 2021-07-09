@@ -1042,8 +1042,8 @@ coordinates:{
 db.routineseq.updateMany({Location:"elsterberg"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 12.16880679130554,
-  "Lat": 50.60840150229049
+  "Long": 12.168238162994385,
+  "Lat": 50.60838107617443
 }
 }})
 db.routineseq.updateMany({Location:"gebesee"},{$set:{
