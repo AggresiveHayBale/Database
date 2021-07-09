@@ -899,13 +899,7 @@ coordinates:{
   "Lat": 50.94220487644014
 }
 }})
-db.routineseq.updateMany({Location:"leinefelde"},{$set:{
-coordinates:{
-  "type": "Point",
-  "Long": 10.326805114746094,
-  "Lat": 51.38849461063877
-}
-}})
+
 db.routineseq.updateMany({Location:"marolterode"},{$set:{
 coordinates:{
   "type": "Point",
