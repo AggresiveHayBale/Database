@@ -1292,5 +1292,12 @@ coordinates:{
   "Lat": 51.02779226886817
 }
 }})
+db.routineseq.updateMany({Location:"kleinfurra"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.76231002807617,
+  "Lat": 51.41366158377321
+}
+}})
 
 db.routineseq.distinct("Location",{coordinates: null})
