@@ -15,6 +15,13 @@ db.routineseq.update({},
       onNull: ""
      },
 },
+    Sample_ID: {
+      $replaceAll: {
+        input: "$Sample_ID",
+        find: " ",
+        replacement: ""
+        }
+      },         
   Submitting_Lab:
     {
     $convert:{
