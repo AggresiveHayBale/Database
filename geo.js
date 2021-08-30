@@ -428,13 +428,7 @@ coordinates:{
   "Lat": 50.89534604722514
 }
 }})
-db.routineseq.updateMany({Location:"frankenblick"},{$set:{
-coordinates:{
-  "type": "Point",
-  "Long": 11.119236946105957,
-  "Lat": 50.39388283200593
-}
-}})
+
 db.routineseq.updateMany({Location:"remptendorf"},{$set:{
 coordinates:{
   "type": "Point",
