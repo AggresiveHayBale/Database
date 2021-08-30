@@ -545,8 +545,8 @@ coordinates:{
 db.routineseq.updateMany({Location:"münchenbernsdorf"},{$set:{
 coordinates:{
   "type": "Point",
-  "Long": 10.848312377929688,
-  "Lat": 50.71896042963921
+  "Long": 11.932697296142576,
+  "Lat": 50.82084851629391
 }
 }})
 
