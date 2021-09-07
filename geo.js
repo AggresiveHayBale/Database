@@ -1300,5 +1300,19 @@ coordinates:{
   "Lat": 51.251171693595666
 }
 }})
+db.routineseq.updateMany({Location:"merkers"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.116670131683348,
+  "Lat": 50.825240397343336
+}
+}})
+db.routineseq.updateMany({Location:"bad langensalza"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.647468566894531,
+  "Lat": 51.10891106778306
+}
+}})
 
 db.routineseq.distinct("Location",{coordinates: null})
