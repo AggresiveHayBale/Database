@@ -1314,5 +1314,33 @@ coordinates:{
   "Lat": 51.10891106778306
 }
 }})
+db.routineseq.updateMany({Location:"empfertshausen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.099868774414062,
+  "Lat": 50.66529463991393
+}
+}})
+db.routineseq.updateMany({Location:"kammerforst"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.425682067871094,
+  "Lat": 51.12227338743922
+}
+}})
+db.routineseq.updateMany({Location:"niederdorla"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.448856353759766,
+  "Lat": 51.16108569699155
+}
+}})
+db.routineseq.updateMany({Location:"oppershausen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.445637702941893,
+  "Lat": 51.13972478986592
+}
+}})
 
 db.routineseq.distinct("Location",{coordinates: null})
