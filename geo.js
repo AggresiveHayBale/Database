@@ -1349,6 +1349,20 @@ coordinates:{
   "Lat": 50.8353103424705
 }
 }})
+db.routineseq.updateMany({Location:"wiesenthal"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.166988372802734,
+  "Lat": 50.70243769160708
+}
+}})
+db.routineseq.updateMany({Location:"amt creuzburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.246875286102295,
+  "Lat": 51.05130923603366
+}
+}})
 
 
 db.routineseq.distinct("Location",{coordinates: null})
