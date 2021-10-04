@@ -1363,6 +1363,27 @@ coordinates:{
   "Lat": 51.05130923603366
 }
 }})
+db.routineseq.updateMany({Location:"heyerode"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.320024490356445,
+  "Lat": 51.16467852637047
+}
+}})
+db.routineseq.updateMany({Location:"oberdorla"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.422592163085938,
+  "Lat": 51.165189842635606
+}
+}})
+db.routineseq.updateMany({Location:"ettenhausen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.232477188110352,
+  "Lat": 50.878398161977145
+}
+}})
 
 
 db.routineseq.distinct("Location",{coordinates: null})
