@@ -1384,6 +1384,28 @@ coordinates:{
   "Lat": 50.878398161977145
 }
 }})
+db.routineseq.updateMany({Location:"barchfeld"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.18159294128418,
+  "Lat": 50.82831040218132
+}
+}})
+db.routineseq.updateMany({Location:"creuzburg"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 10.247669219970703,
+  "Lat": 51.052078091925004
+}
+}})
+db.routineseq.updateMany({Location:"tunzenhausen"},{$set:{
+coordinates:{
+  "type": "Point",
+  "Long": 11.073017120361328,
+  "Lat": 51.15899984368949
+}
+}})
+
 
 
 db.routineseq.distinct("Location",{coordinates: null})
