@@ -1,14 +1,8 @@
 db.routineseq.aggregate(
 [{$match: {
-  PLZ: {
-    $exists: true
-  },
-  Long: {
-    $in: [
-      null,
-      ''
-    ]
-  }
+      "coordinates.Long": {
+        "$exists": false
+      }
 }}, {$lookup: {
   from: 'GeoRicc',
   localField: 'PLZ',
