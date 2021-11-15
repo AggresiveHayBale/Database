@@ -1,5 +1,8 @@
 db.routineseq.aggregate(
 [{$match: {
+      PLZ: {
+        "$exists": true
+      },
       "coordinates.Long": {
         "$exists": false
       }
@@ -22,6 +25,41 @@ db.routineseq.aggregate(
     Lat: "$Lat"
   }
 
+  }}, {$project: {
+  TempLoc: 0,
+  Long: 0,
+  Lat: 0,
+}}, {$merge: {
+  into: 'routineseq',
+  on: '_id'
+}}]
+)
+
+db.routineseq.aggregate(
+[{$match: {
+      Location: "",
+      "coordinates.Long": {
+        "$exists": false
+      }
+}}, {$lookup: {
+  from: 'GeoRicc',
+  localField: 'PLZ',
+  foreignField: 'PLZ',
+  as: 'TempLoc'
+}}, {$set: {
+  Long: '$TempLoc.longitude',
+  Lat: '$TempLoc.latitude',
+  Location: "NA"
+}}, {$unwind: {
+  path: '$Lat'
+}}, {$unwind: {
+  path: '$Long'
+}}, {$addFields: {
+  coordinates: {
+    type: "point",
+    Long: "$Long",
+    Lat: "$Lat"
+  }
   }}, {$project: {
   TempLoc: 0,
   Long: 0,
