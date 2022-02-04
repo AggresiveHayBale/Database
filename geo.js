@@ -1,5 +1,16 @@
 db = db.getSiblingDB('SARSCoV2')
 
+db.routineseq.updateMany({
+  "Region/Country/Division": {
+    "$exists": false
+  }
+},
+{
+  $set: {
+    "Region/Country/Division": "Europe/Germany/not_defined"
+  }
+})
+
 db.routineseq.update( {"Location" : "saalfeld/saale"}, { $set: {'Location': 'saalfeld'}},{ multi: true})
 
 db.routineseq.updateMany({Location:"weimar"},{$set:{
