@@ -69,3 +69,29 @@ db.routineseq.aggregate(
   on: '_id'
 }}]
 )
+
+db.routineseq.aggregate(
+[{$match: {
+      PLZ: {
+        "$exists": true
+      },
+      Location: ""
+}}, {$lookup: {
+  from: 'GeoRicc',
+  localField: 'PLZ',
+  foreignField: 'PLZ',
+  as: 'TempLoc'
+}}, {$set: {
+  Loc: '$TempLoc.city'
+}}, {$unwind: {
+  path: '$Loc'
+}}, {$set: {
+  Location: '$Loc'
+  }}, {$project: {
+  TempLoc: 0,
+  Loc: 0,
+}}, {$merge: {
+  into: 'routineseq',
+  on: '_id'
+}}]
+)
